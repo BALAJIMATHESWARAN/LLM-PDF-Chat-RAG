@@ -1,0 +1,10 @@
+flask
+flask-cors
+python-dotenv
+PyPDF2
+faiss-cpu
+langchain
+langchain-openai
+pillow
+pytesseract
+pandas

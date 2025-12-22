@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Document Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+    <div class="logo">AI DOC</div>
+
+    <nav>
+        <a class="active">Dashboard</a>
+    </nav>
+
+    <!-- Upload in Sidebar -->
+    <div class="sidebar-upload">
+    <h4>Upload Documents</h4>
+    <input type="file" id="fileInput" multiple>
+    <button onclick="uploadFiles()">Upload</button>
+    <p id="uploadStatus"></p>
+
+    <!-- Uploaded files -->
+    <div class="file-list" id="fileList"></div>
+</div>
+
+</aside>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+            <h2>LLM Document Assistant</h2>
+            <div class="profile">👤</div>
+        </header>
+
+        <!-- Cards -->
+        <section class="cards">
+
+            <!-- Ask Question -->
+            <div class="card wide chat-card">
+                <h3>Ask Question</h3>
+
+                <div id="chatBox" class="chat-box"></div>
+
+              <div class="chat-input">
+    <input 
+        type="text" 
+        id="question"
+        class="question-input"
+        placeholder="Type your question here..."
+    >
+    <button onclick="askQuestion()">Ask</button>
+</div>
+
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
