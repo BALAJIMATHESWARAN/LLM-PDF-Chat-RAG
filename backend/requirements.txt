@@ -5,6 +5,8 @@ PyPDF2
 faiss-cpu
 langchain
 langchain-openai
+sentence-transformers
 pillow
 pytesseract
 pandas
+gunicorn
